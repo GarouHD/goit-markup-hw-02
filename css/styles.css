@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --text-color: #212121;
+  --text-color-accent: #2196f3;
+  --text-light-grey: #757575;
+  --effective-solutions-background: #2f303a;
+  --our-team-background: #f5f4fa;
+  --what-we-do-background: #e5e5e5;
+  --button-dark-blue: #188ce8;
+  --white: #ffffff;
+  --product-buttons-grey: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+body a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--text-color-accent);
+}
+
+.nav-bar a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--text-color);
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: var(--text-color-accent);
+}
+
+.header-email-phone a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--text-light-grey);
+}
+
+.header-email-phone a:hover,
+.header-email-phone a:focus {
+  color: var(--text-color-accent);
+}
+
+.effective-solutions {
+  background-color: var(--effective-solutions-background);
+}
+
+.effective-solutions h1 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.effective-solutions button {
+  background-color: var(--text-color-accent);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  cursor: pointer;
+}
+
+.effective-solutions button:hover,
+.effective-solutions button:focus {
+  background-color: var(--button-dark-blue);
+}
+
+.qualities h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.qualities p {
+  color: var(--text-light-grey);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.what-we-do h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.our-team {
+  background-color: var(--our-team-background);
+}
+
+.our-team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.our-team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.our-team p {
+  color: var(--text-light-grey);
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--effective-solutions-background);
+}
+
+.footer-address a {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-email-phone {
+  opacity: 0.6;
+}
+
+.footer-email-phone:hover,
+.footer-email-phone:focus {
+  color: var(--text-color-accent);
+}
+
+.product-buttons button {
+  background-color: var(--product-buttons-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-buttons button:hover,
+.product-buttons button:focus {
+  background-color: var(--text-color-accent);
+  color: var(--white);
+}
+
+.products h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.products p {
+  color: var(--text-light-grey);
+  font-size: 16px;
+  line-height: 1.88;
+}
