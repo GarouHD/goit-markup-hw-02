@@ -38,11 +38,13 @@ img {
 address {
   font-style: normal;
 }
-body a, link {
+body a,
+link {
   text-decoration: none;
   color: inherit;
 }
-body ul, .list {
+body ul,
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -161,13 +163,13 @@ body {
 }
 
 .footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
 }
 
 .footer-contacts:hover,
 .footer-contacts:focus {
-    color: var(--white);
+  color: var(--white);
 }
 
 .product-buttons {
@@ -183,7 +185,7 @@ body {
 }
 
 .product-buttons-middle {
-    padding: 6px 53px
+  padding: 6px 53px;
 }
 
 .current-button,
@@ -207,9 +209,9 @@ body {
 }
 
 .current-page {
-    color: var(--text-color-accent);
+  color: var(--text-color-accent);
 }
 
 .product-description-container {
-    padding: 20px 24px;
+  padding: 20px 24px;
 }
