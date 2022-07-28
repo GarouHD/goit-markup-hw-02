@@ -12,18 +12,47 @@
   --product-buttons-grey: #f5f4fa;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--text-color);
+/* default styles for css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-
-body a {
-  text-decoration: none;
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
   font-style: normal;
 }
+body a, link {
+  text-decoration: none;
+  color: inherit;
+}
+body ul, .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* end of default styles */
 
-body ul {
-  list-style-type: none;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
 }
 
 .logo {
@@ -34,27 +63,24 @@ body ul {
   color: var(--text-color-accent);
 }
 
-.nav-bar a {
+.nav-bar-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
-  color: var(--text-color);
 }
 
-.nav-bar a:hover,
-.nav-bar a:focus {
+.nav-bar-link:hover,
+.nav-bar-link:focus {
   color: var(--text-color-accent);
 }
 
-.header-email-phone a {
+.header-email-phone {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
   color: var(--text-light-grey);
 }
 
-.header-email-phone a:hover,
-.header-email-phone a:focus {
+.header-email-phone:hover,
+.header-email-phone:focus {
   color: var(--text-color-accent);
 }
 
@@ -62,7 +88,7 @@ body ul {
   background-color: var(--effective-solutions-background);
 }
 
-.effective-solutions h1 {
+.effective-solutions-title {
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -70,13 +96,17 @@ body ul {
   text-align: center;
 }
 
-.effective-solutions button {
+.effective-solutions-button {
   background-color: var(--text-color-accent);
   color: var(--white);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
 }
 
 .effective-solutions button:hover,
@@ -84,19 +114,17 @@ body ul {
   background-color: var(--button-dark-blue);
 }
 
-.qualities h3 {
+.benefits-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.17;
 }
 
-.qualities p {
+.benefits-text {
   color: var(--text-light-grey);
-  font-size: 14px;
   line-height: 1.71;
 }
 
-.what-we-do h2 {
+.what-we-do-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -107,21 +135,21 @@ body ul {
   background-color: var(--our-team-background);
 }
 
-.our-team h2 {
+.our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.our-team h3 {
+.our-team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
 }
 
-.our-team p {
+.our-team-text {
   color: var(--text-light-grey);
   font-size: 16px;
   line-height: 1.17;
@@ -132,45 +160,56 @@ body ul {
   background-color: var(--effective-solutions-background);
 }
 
-.footer-address a {
-  color: var(--white);
-  font-size: 14px;
-  line-height: 1.71;
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
 }
 
-.footer-email-phone {
-  opacity: 0.6;
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--white);
 }
 
-.footer-email-phone:hover,
-.footer-email-phone:focus {
-  color: var(--text-color-accent);
-}
-
-.product-buttons button {
+.product-buttons {
   background-color: var(--product-buttons-grey);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 26px;
 }
 
-.product-buttons button:hover,
-.product-buttons button:focus {
+.product-buttons-middle {
+    padding: 6px 53px
+}
+
+.current-button,
+.product-buttons:hover,
+.product-buttons:focus {
   background-color: var(--text-color-accent);
   color: var(--white);
 }
 
-.products h3 {
+.products-title {
   color: var(--text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
-.products p {
+.products-text {
   color: var(--text-light-grey);
   font-size: 16px;
   line-height: 1.88;
+}
+
+.current-page {
+    color: var(--text-color-accent);
+}
+
+.product-description-container {
+    padding: 20px 24px;
 }
